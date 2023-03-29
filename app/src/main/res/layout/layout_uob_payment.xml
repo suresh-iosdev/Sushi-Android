@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_black"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_centerInParent="true"
+       >
+
+        <RelativeLayout
+            android:id="@+id/layoutClose"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/asset58" />
+        </RelativeLayout>
+
+      <WebView
+          android:layout_below="@+id/layoutClose"
+          android:id="@+id/webview_uob_form"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</RelativeLayout>

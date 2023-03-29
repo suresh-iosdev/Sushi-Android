@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--    <include layout="@layout/toolbar_new" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/gillsansbold"
+            android:text="Vouchers"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_17ssp"/>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutVouchers"
+            style="@style/MyCustomTabLayoutNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <View
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:id="@+id/view1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/view2"
+                android:background="@color/colorSelectedTab"
+                android:visibility="gone"
+                />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/colorWhite"
+                android:visibility="visible" />
+
+            <View
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:id="@+id/view3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/view2"
+                android:background="@color/colorSelectedTab"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <com.app.sushi.tei.CustomViews.CustomViewPager.WrapContentViewPager1
+            android:id="@+id/viewPagerVouchers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabLayoutPromotion"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewVouchers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:visibility="gone"
+                android:dividerHeight="0dp"
+                android:scrollbars="none"
+                android:nestedScrollingEnabled="false"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewVouchersUsed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:visibility="gone"
+                android:dividerHeight="0dp"
+                android:scrollbars="none"
+                android:nestedScrollingEnabled="false"/>
+
+            <TextView
+                android:id="@+id/txtEmptyVoucher"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:fontFamily="@font/baloo2_bold"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12ssp"
+                android:text="No Promotion Earned" />
+
+            <TextView
+                android:id="@+id/txtEmptyUsedVoucher"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:fontFamily="@font/baloo2_bold"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12ssp"
+                android:text="No Promotion Redeemed" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

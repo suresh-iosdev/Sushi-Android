@@ -1,0 +1,191 @@
+<LinearLayout
+    android:id="@+id/parentLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:id="@+id/cartImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop" />
+
+
+        <RelativeLayout
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/cartImageView">
+
+            <!--        android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+    -->
+
+
+            <TextView
+                android:id="@+id/productNameTextView"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo2_bold"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/modifiersOrSubMenuTextView"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productNameTextView"
+                android:fontFamily="@font/baloo2_bold"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="#5F5F5F"
+                android:textSize="11sp" />
+
+
+            <ImageView
+                android:id="@+id/closeImageView"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:background="#F3F1F2"
+                android:padding="4dp"
+                android:visibility="gone" />
+            <!--
+                android:layout_marginRight="10dp" -->
+            <LinearLayout
+                android:id="@+id/priceLayout"
+                android:orientation="horizontal"
+                android:gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo2_bold"
+                    android:text="$"
+                    android:textColor="#3C3A3B"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/priceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo2_bold"
+                    android:text=""
+                    android:textColor="#3C3A3B"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txt_discountApplied"
+                android:layout_below="@+id/priceLayout"
+                android:gravity="end"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo2_bold"
+                android:text="(Discount Applied)"
+                android:textColor="@color/greendark"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textSize="@dimen/_8ssp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txt_voucherApplied"
+                android:layout_below="@+id/priceLayout"
+                android:gravity="right|center_vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo2_bold"
+                android:text="(Voucher)"
+                android:textColor="@color/greendark"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textSize="@dimen/_8ssp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txt_FreeApplied"
+                android:layout_below="@+id/priceLayout"
+                android:gravity="right|center_vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo2_bold"
+                android:text="(Free)"
+                android:textColor="@color/greendark"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textSize="@dimen/_8ssp"
+                android:visibility="gone"/>
+            <!---                 android:layout_toLeftOf="@+id/closeImageView"
+ -->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/specialInstructionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo2_medium"
+        android:maxLines="3"
+        android:minLines="1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="No Special Instructions."
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/kakiDiscountTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/baloo2_medium"
+        android:paddingLeft="20dp"
+        android:paddingTop="3dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="9sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E9E9E9" />
+
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".activity.FiveMenuActivityNew">
+
+            <include
+                android:id="@+id/toolBar"
+                layout="@layout/toolbar_new"/>
+
+            <FrameLayout
+                android:layout_marginBottom="@dimen/_55sdp"
+                android:background="@color/colorWhite"
+                android:id="@+id/frame_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+
+            <!--<android.support.design.widget.TabLayout
+                android:id="@+id/tablayoutFiveMenu"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_centerVertical="true"
+                android:background="@color/colorWhite"
+                app:tabBackground="@color/colorWhite"
+                app:tabIndicatorColor="@color/greendark"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="3dp"
+                app:tabGravity="center"
+                app:tabMode="fixed"
+                app:tabPadding="0dp"
+                app:tabIndicatorGravity="top"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:visibility="gone"/>-->
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:id="@+id/navigationView"
+            android:layout_gravity="left"
+            android:visibility="visible"
+            android:background="@android:color/transparent">
+
+
+            <RelativeLayout
+                android:id="@+id/includeheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/mainMenuLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/incLayout"
+                        layout="@layout/drawer_menul_list_layout" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/subMenuLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/incLayout"
+                        layout="@layout/include_menu_about_sub_list" />
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@drawable/viewshadowdown"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/_50sdp"/>
+
+    <LinearLayout
+        android:id="@+id/lly_view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/_50sdp">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="3dp"
+            android:background="@drawable/button_back_red"
+            android:visibility="visible"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="3dp"
+            android:background="@drawable/button_back_red"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:visibility="invisible"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="3dp"
+            android:background="@drawable/button_back_red"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:visibility="invisible"/>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="3dp"
+            android:background="@drawable/button_back_red"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:visibility="invisible"/>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="3dp"
+            android:background="@drawable/button_back_red"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:labelVisibilityMode="labeled"
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        app:itemBackground="@color/colorWhite"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemIconSize="@dimen/_15sdp"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:itemHorizontalTranslationEnabled="true"
+        app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView"
+        app:menu="@menu/navigation"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

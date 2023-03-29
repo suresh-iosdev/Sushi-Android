@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282627"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/netWorkStatusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#CC0000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/networkImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/alert_error_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/networkImageView"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            >
+
+            <TextView
+                android:id="@+id/networkTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Internet Connected"
+                android:textSize="16sp"
+                android:fontFamily="@font/gillsansbold"
+                android:layout_marginBottom="2dp"
+                android:textColor="#FFFFFF" />
+
+
+            <TextView
+                android:id="@+id/networkSubTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/networkTextView"
+                android:fontFamily="@font/gillsansbold"
+                android:text="Internet connection established."
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/imgLoading"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/icon_sand_big"
+        android:visibility="gone" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/gifLoading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/loading_big" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="we are processing\nyour order!"
+        android:fontFamily="@font/gillsansbold"
+        android:textAllCaps="true"
+        android:textColor="#F9C852"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/gillsansbold"
+        android:layout_marginTop="4dp"
+        android:text="You will be redirected once order is placed."
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_lock" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="14dp"
+                android:fontFamily="@font/gillsansbold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="14dp"
+                android:text="payment total"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="UnknownIdInLayout" />
+
+            <TextView
+                android:id="@+id/txtTotal_dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/gillsansbold"
+                android:layout_toRightOf="@+id/txtLabel"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp"
+                android:text="$"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/gillsansbold"
+                android:layout_toRightOf="@+id/txtTotal_dollar"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp"
+                android:text="0.00"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#514F50" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imgPaymentProcess"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_process_complete"
+            android:visibility="gone" />
+
+        <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/imgGifPaymentProcess"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/loading_big" />
+
+
+        <TextView
+            android:id="@+id/payprocessing_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/gillsansbold"
+            android:layout_marginLeft="15dp"
+            android:text="Payment Processing"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgOrderProcess"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_process_complete"
+            android:visibility="gone" />
+
+        <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/imgGigOrderProcess"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/loading_big" />
+
+        <TextView
+            android:id="@+id/orderprocessing_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gillsansbold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="Order Processing"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:background="#514F50" />
+
+
+</LinearLayout>

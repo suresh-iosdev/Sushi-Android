@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable-v24/orderdetails_unitno_shape.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/active_dot.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/add_product_background.xml" value="1.0166666666666666" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/add_promotion_applynoe.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/add_to_cart_background_round.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/badge_promotions_banner.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/black_round_border_bg.xml" value="0.2111111111111111" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/border_black_white_bg.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/border_red_bg.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/button_bg.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/button_bg_green.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/button_bg_green_round.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/button_bg_white_round.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/checkout_paynow_background.xml" value="0.253125" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/checkout_paynow_background_black.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/checkout_paynow_background_grey.xml" value="0.1" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/checkout_paynow_background_round.xml" value="0.12760416666666666" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/checkoutbg.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/checkoutbg_white.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/default_image.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/green_bg.xml" value="0.25" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/ic_keyboard_arrow_down_black_24dp.xml" value="0.25729166666666664" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/ic_keyboard_arrow_down_grey_24dp.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/login_gold_bg.xml" value="0.4" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/login_register_bg_fill_new.xml" value="0.4" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/login_register_bg_new.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/login_register_bg_new2.xml" value="0.16770833333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/loginbg.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/loginbg_new.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/loginbutton.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/non_active_dot.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/payment_border.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/payment_edit_background.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/payment_outline.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/rectangle_grey.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/rectangle_white.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/rectangle_white_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/rectangle_white_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/shadow_background_new_login.xml" value="0.536" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/sorderstatus_background.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/thanks_order_background.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/toggle_selector_cutlery.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/toggle_selector_cutlery2.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/drawable/white_round_border_bg.xml" value="0.1527777777777778" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_activation.xml" value="0.19947916666666668" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_cart.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_cms.xml" value="0.2421875" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_five_menu.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_fivemenu_new.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_forgot_password.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_home.xml" value="0.1578125" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_landing.xml" value="0.13043478260869565" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_login_layout.xml" value="0.23435897435897435" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_menu_sub_category.xml" value="0.23435897435897435" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_nelson_payment_process.xml" value="0.1578125" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_order_summary.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_outlet.xml" value="0.140625" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_payment.xml" value="0.176" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_payment_as_dialog.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_processing_order.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_reset_password.xml" value="0.264" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_search.xml" value="0.4" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_search_product_details.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_settings.xml" value="0.18020833333333333" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_splash.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_splash_old.xml" value="0.1734375" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_sub_category.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_thanks.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_verification.xml" value="0.19947916666666668" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/activity_view_order_detail_new.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/adapter_cart_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/adapter_cart_item_summary.xml" value="0.72" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/adapter_category_new.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/adapter_hot_menu_product.xml" value="0.2" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/adapter_order_subitem.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/adapter_outlet_list_new.xml" value="0.49458483754512633" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/adapter_outletlist_layout.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/adapter_places_filter_1.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/adapter_promotions_banner.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/adapter_subcategory.xml" value="0.2" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_add_product.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_all_message_layout.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_change_outlet_layout.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_clearcart_layout.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_continue_login.xml" value="0.264" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_fragment.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_landing_description.xml" value="0.2421875" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_login_layout.xml" value="0.25" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_outlet_success.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_payment.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_payment_bottom.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_register_layout.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_rewardpoints.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_show_alert_logout.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_show_message_layout.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_voucher.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_voucher_recipent.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/dialog_wallet.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/drawer_menul_list_layout.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/fragment_bento_product.xml" value="0.18385416666666668" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/fragment_ewallet.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/fragment_my_account.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/fragment_my_account_new.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/fragment_order.xml" value="0.264" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/fragment_promotion.xml" value="0.18385416666666668" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/fragment_promotion_earned.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/fragment_promotion_redeemed.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/fragment_reward.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/fragment_reward_rewards.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/fragment_subcategory.xml" value="0.2" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/fragment_voucher.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/include_menu_about_sub_list.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/item_e_vouchers.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/item_ewallet.xml" value="0.264" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_aboutus_item.xml" value="0.2421875" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_bento_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_choose_outlet_new.xml" value="0.4740484429065744" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_delivery_date_dialog.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_delivery_pincode_dialog.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_member_benifit.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_menu_cart.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_menu_search.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_modifier_heading_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_modifier_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_order_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_product_details_dialog.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_product_item.xml" value="0.176" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_promotion_header.xml" value="0.23435897435897435" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_promotion_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_promotion_item_new.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_redeem_dialog.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_search_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_search_product_details_dialog.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_search_product_details_dialog1.xml" value="0.152" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_setmenu_apply_0_child_item.xml" value="0.23435897435897435" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_setmenu_apply_1_child_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_setmenu_parent_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_tab_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_tab_item1.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_tab_orders_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_tab_rewards_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_tablayout_item_promotion.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_thank_you.xml" value="0.264" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/layout_thanks_order_item.xml" value="0.28842105263157897" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/login_layout_new.xml" value="0.23697916666666666" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/pactivity_main.xml" value="0.14791666666666667" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/payment_type_popup.xml" value="0.4034003091190108" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/referencelayout.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/rewards_list.xml" value="0.2" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/rewards_list_item.xml" value="0.536" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/toolbar.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/toolbar_new.xml" value="0.264" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/toolbar_new2.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/layout/view_pager_banner.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/menu/menu_home.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/Sushi Tei/app/src/main/res/menu/navigation.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/drawable/toggle_selector.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/drawable/toggle_selector_cutlery.xml" value="0.25416666666666665" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/activity_cart.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/activity_menu_sub_category.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/activity_order_summary.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/activity_payment.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/activity_processing_order.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/activity_search_product_details.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/activity_settings.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/activity_view_order_detail_new.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/adapter_cart_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/adapter_cart_item_summary.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/adapter_hot_menu_product.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/dialog_payment_bottom.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/fragment_reward.xml" value="0.12604166666666666" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/fragment_reward_redeemed.xml" value="0.12604166666666666" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/fragment_reward_rewards.xml" value="0.12604166666666666" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/layout_member_benifit.xml" value="0.23802083333333332" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/layout_search_product_details_dialog1.xml" value="0.264" />
+        <entry key="..\:/K2B/Source codes/Sushi Tei/backup/Sushi Tei 08-02-2022 8 pm Backup/app/src/main/res/layout/rewards_list.xml" value="0.12604166666666666" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/drawable/badge_promotions_banner.xml" value="0.1" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/drawable/bg_label.xml" value="0.21302083333333333" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/drawable/button_bg_green_round.xml" value="0.21302083333333333" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/drawable/checkout_paynow_background.xml" value="0.21302083333333333" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/drawable/checkout_paynow_background_round.xml" value="0.21302083333333333" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/drawable/payment_border.xml" value="0.21302083333333333" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/drawable/paymet_popup_bg.xml" value="0.1078125" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/drawable/sorderstatus_background.xml" value="0.21302083333333333" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/activity_cart.xml" value="0.18" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/activity_fivemenu_new.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/activity_menu_sub_category.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/activity_order_summary.xml" value="0.25" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/activity_payment.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/activity_search.xml" value="0.22" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/activity_sub_category.xml" value="0.25" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/activity_thanks.xml" value="0.33" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/activity_view_order_detail_new.xml" value="0.22" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/adapter_cart_item.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/adapter_cart_item_summary.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/adapter_hot_menu_product.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/adapter_order_subitem.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/adapter_outlet_list_new.xml" value="0.25" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/adapter_saved_address.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/adapter_subcategory.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/base_rewards_list_new.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/dialog_add_product.xml" value="0.33" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/dialog_login_layout.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/drawer_menul_list_layout.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/fragment_my_account_new.xml" value="0.33" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/fragment_order.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/fragment_orderlist.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/fragment_subcategory.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/layout_choose_outlet_new.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/layout_delivery_date_dialog.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/layout_member_benifit.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/layout_order_item.xml" value="0.25" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/layout_product_item.xml" value="0.33" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/layout_thank_you.xml" value="0.33" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/payment_type_popup.xml" value="0.33" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/tagimageview.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/layout/toolbar_new.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/menu/menu_empty.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/menu/menu_home.xml" value="0.33" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/menu/menu_main.xml" value="0.196875" />
+        <entry key="..\:/Project/Sushi Tei_31_01_2022/app/src/main/res/menu/navigation.xml" value="0.196875" />
+        <entry key="app/src/main/res/drawable/add_product_background.xml" value="0.9666666666666667" />
+        <entry key="app/src/main/res/drawable/btn_green_round.xml" value="0.359375" />
+        <entry key="app/src/main/res/drawable/button_bg_green_round.xml" value="0.359375" />
+        <entry key="app/src/main/res/drawable/checkout_paynow_background.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/checkout_paynow_background_grey.xml" value="0.3523076923076923" />
+        <entry key="app/src/main/res/drawable/default_image.xml" value="0.34375" />
+        <entry key="app/src/main/res/drawable/ic_keyboard_arrow_down_black_24dp.xml" value="0.34375" />
+        <entry key="app/src/main/res/drawable/ic_payment.xml" value="0.34375" />
+        <entry key="app/src/main/res/drawable/ic_share.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/login_gold_bg.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/drawable/member_sign_bg.xml" value="0.3523076923076923" />
+        <entry key="app/src/main/res/drawable/mobile_num_bg.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/drawable/payment_bg_new.xml" value="0.359375" />
+        <entry key="app/src/main/res/drawable/payment_border.xml" value="0.359375" />
+        <entry key="app/src/main/res/drawable/payment_border_green.xml" value="0.359375" />
+        <entry key="app/src/main/res/drawable/paymet_popup_bg.xml" value="0.359375" />
+        <entry key="app/src/main/res/drawable/validate_bg.xml" value="0.3523076923076923" />
+        <entry key="app/src/main/res/layout/activity_cart.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/activity_cms.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/activity_five_menu.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/activity_fivemenu_new.xml" value="0.29907407407407405" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.29907407407407405" />
+        <entry key="app/src/main/res/layout/activity_landing.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/activity_login_layout.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/activity_member_log_reg.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_member_log_reg_new.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_menu_sub_category.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/activity_nelson_payment_process.xml" value="0.30833333333333335" />
+        <entry key="app/src/main/res/layout/activity_nets_home.xml" value="0.2722222222222222" />
+        <entry key="app/src/main/res/layout/activity_nets_test.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/activity_order_summary.xml" value="0.33794871794871795" />
+        <entry key="app/src/main/res/layout/activity_outlet.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/activity_payment.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_processing_order.xml" value="0.3101851851851852" />
+        <entry key="app/src/main/res/layout/activity_product_list.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/activity_search_product_details.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/activity_sub_category.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/activity_thanks.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_verification.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/adapter_cart_item.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/adapter_cart_item_summary.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/adapter_category_new.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/adapter_hot_menu_product.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/adapter_outlet_list_new.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/adapter_outletlist_layout.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/adapter_saved_address.xml" value="0.2740740740740741" />
+        <entry key="app/src/main/res/layout/adapter_subcategory.xml" value="0.3101851851851852" />
+        <entry key="app/src/main/res/layout/dialog_add_product.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/dialog_all_message_layout.xml" value="0.325" />
+        <entry key="app/src/main/res/layout/dialog_continue_login.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/dialog_login_layout.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/dialog_outlet_success.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/dialog_payment.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/dialog_payment_bottom.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/dialog_register_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialog_rewardpoints.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/drawer_menul_list_layout.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/fragment_my_account.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/fragment_my_account_new.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/fragment_promotion.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/fragment_reward.xml" value="0.3111111111111111" />
+        <entry key="app/src/main/res/layout/fragment_reward_rewards.xml" value="0.3111111111111111" />
+        <entry key="app/src/main/res/layout/fragment_subcategory.xml" value="0.29907407407407405" />
+        <entry key="app/src/main/res/layout/fragment_voucher.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/include_menu_about_sub_list.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/layout_badge_view.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/layout_bento_item.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/layout_choose_outlet_new.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/layout_member_benifit.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/layout_modifier_heading_item.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/layout_product_details_dialog.xml" value="0.2635416666666667" />
+        <entry key="app/src/main/res/layout/layout_product_item.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/layout_promotion_header.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/layout_search_product_details_dialog1.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/layout_setmenu_apply_0_child_item.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/layout_setmenu_apply_1_child_item.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/layout_setmenu_parent_item.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/layout_tab_item.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/layout_thank_you.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/layout_thanks_order_item.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/payment_type_popup.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/rewards_list.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/layout/toolbar_new.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/view_pager_banner.xml" value="0.3416666666666667" />
+        <entry key="app/src/main/res/menu/navigation.xml" value="0.32314814814814813" />
+      </map>
+    </option>
+  </component>
+  <component name="Kotlin2JsCompilerArguments">
+    <option name="sourceMapEmbedSources" />
+    <option name="sourceMapPrefix" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

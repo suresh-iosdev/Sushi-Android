@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar_new" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:scaleType="fitXY"
+            android:src="@drawable/loginimage"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/createAccounts"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/button_back_brown"
+            android:fontFamily="@font/gotham_medium"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:src="@drawable/sushi_tei_header_white"
+                android:tint="@color/greenRegisterText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_logo"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/lly_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/LoginView"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/login_register_bg_fill_new"
+                        android:fontFamily="@font/gotham_book"
+                        android:text="LOGIN"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/registrationView"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/login_register_bg_new"
+                        android:fontFamily="@font/gotham_book"
+                        android:text="REGISTER"
+                        android:textAllCaps="false"
+                        android:textColor="@color/greenRegisterText"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lly_registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/LoginView1"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/login_register_bg_new"
+                        android:fontFamily="@font/gotham_book"
+                        android:text="LOGIN"
+                        android:textAllCaps="false"
+                        android:textColor="@color/greenRegisterText"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/registrationView1"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/login_register_bg_fill_new"
+                        android:fontFamily="@font/gotham_book"
+                        android:text="REGISTER"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_loginLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/baloo2_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Login / Verify Account"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/baloo2_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Enter your phone number to get your one time pin via sms to login/singup an account"
+                    android:textColor="@color/colorGrayTxt1"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_overall_login_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        >
+
+                        <com.app.sushi.tei.shadow.ShadowLinearLayout
+                            android:id="@+id/layout_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_7sdp"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rectangle_white"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_10sdp">
+
+                                <EditText
+                                    android:id="@+id/edt_mobile_login"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/add_product_background"
+                                    android:fontFamily="@font/baloo2_regular"
+                                    android:gravity="center"
+                                    android:hint="Mobile Number"
+                                    android:inputType="phone"
+                                    android:maxLength="8"
+                                    android:padding="@dimen/_7sdp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_12ssp"
+                                    tools:ignore="HardcodedText,TextFields" />
+
+                                <EditText
+                                    android:id="@+id/edt_pin_login"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/add_product_background"
+                                    android:fontFamily="@font/baloo2_regular"
+                                    android:gravity="center"
+                                    android:hint="Enter Your PIN"
+                                    android:inputType="numberPassword"
+                                    android:maxLength="6"
+                                    android:padding="@dimen/_7sdp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_12ssp"
+                                    tools:ignore="HardcodedText,TextFields" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/forgotPassword"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/baloo2_regular"
+                                        android:gravity="center"
+                                        android:text="Forgot your Pin?"
+                                        android:textColor="@color/greendark"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginTop="@dimen/_2sdp"
+                                        android:background="@color/greendark" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </com.app.sushi.tei.shadow.ShadowLinearLayout>
+
+                        <Button
+                            android:id="@+id/Login"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_below="@+id/layout_login"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@drawable/checkout_paynow_background_grey"
+                            android:fontFamily="@font/gotham_book"
+                            android:text="Continue"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffff"
+
+                            android:textSize="@dimen/_13ssp"
+                            android:visibility="visible"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/LoginLater"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Login"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:fontFamily="@font/baloo2_bold"
+                            android:textColor="@color/greendark"
+                            android:textSize="@dimen/_12ssp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_overall_register_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        ></RelativeLayout>
+                    <com.app.sushi.tei.shadow.ShadowLinearLayout
+                        android:id="@+id/layout_reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_7sdp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_white"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp">
+
+                            <EditText
+                                android:id="@+id/edt_mobile_reg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/add_product_background"
+                                android:fontFamily="@font/baloo2_regular"
+                                android:gravity="center"
+                                android:hint="Mobile Number"
+                                android:imeOptions="actionDone"
+                                android:inputType="phone"
+                                android:maxLength="8"
+                                android:padding="@dimen/_7sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText,TextFields" />
+
+                            <EditText
+                                android:id="@+id/edt_otp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/add_product_background"
+                                android:fontFamily="@font/baloo2_regular"
+                                android:gravity="center"
+                                android:hint="Enter Your OTP"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberPassword"
+                                android:maxLength="6"
+                                android:padding="@dimen/_7sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp"
+                                android:visibility="gone"
+                                tools:ignore="HardcodedText,TextFields" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/txt_resend"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/baloo2_regular"
+                                    android:gravity="center"
+                                    android:text="Resend OTP"
+                                    android:textColor="@color/greendark"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/txt_otpSeconds"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/baloo2_medium"
+                                    android:gravity="center"
+                                    android:text="60 Seconds Remaining"
+                                    android:textColor="@color/transparent_black"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:visibility="gone"
+                                    tools:ignore="HardcodedText" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </com.app.sushi.tei.shadow.ShadowLinearLayout>
+
+                    <Button
+                        android:id="@+id/Register"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_32sdp"
+                        android:layout_below="@+id/layout_reg"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/checkout_paynow_background_grey"
+                        android:fontFamily="@font/gotham_book"
+                        android:text="Continue"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+
+                    <com.app.sushi.tei.shadow.ShadowLinearLayout
+                        android:id="@+id/layout_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_transparent"
+                        android:paddingBottom="@dimen/_7sdp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_white"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp">
+
+                            <EditText
+                                android:id="@+id/fname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/add_product_background"
+                                android:fontFamily="@font/baloo2_regular"
+                                android:gravity="center"
+                                android:hint="Enter Your First Name"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:padding="@dimen/_7sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText,TextFields" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_10sdp" />
+
+                            <EditText
+                                android:id="@+id/lname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/add_product_background"
+                                android:fontFamily="@font/baloo2_regular"
+                                android:gravity="center"
+                                android:hint="Enter Your Last Name"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:padding="@dimen/_7sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_10sdp" />
+
+                            <EditText
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/add_product_background"
+                                android:fontFamily="@font/baloo2_regular"
+                                android:gravity="center"
+                                android:hint="Enter Your Email"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:padding="@dimen/_7sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_10sdp" />
+
+                            <EditText
+                                android:id="@+id/edt_pin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/add_product_background"
+                                android:fontFamily="@font/baloo2_regular"
+                                android:gravity="center"
+                                android:hint="Enter Your PIN"
+                                android:imeOptions="actionNext"
+                                android:inputType="numberPassword"
+                                android:maxLength="6"
+                                android:padding="@dimen/_7sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_10sdp" />
+
+                            <EditText
+                                android:id="@+id/referral_code"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/add_product_background"
+                                android:fontFamily="@font/baloo2_regular"
+                                android:gravity="center"
+                                android:hint="Enter Refferal Code"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:padding="@dimen/_7sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </com.app.sushi.tei.shadow.ShadowLinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lly_registration_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_register"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/back_enable"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight=".5"
+                            android:background="@drawable/logindisablebg"
+                            android:fontFamily="@font/baloo2_bold"
+                            android:text="Back"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:id="@+id/back"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight=".5"
+                            android:background="@drawable/registartion_disable"
+                            android:fontFamily="@font/baloo2_bold"
+                            android:text="Back"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:id="@+id/createAccountsView"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight=".5"
+                            android:background="@drawable/checkout_paynow_background"
+                            android:fontFamily="@font/baloo2_bold"
+                            android:text="Complete"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold"
+                            android:visibility="visible"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:id="@+id/conitnueDisable"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight=".5"
+                            android:background="@drawable/registartion_disable"
+                            android:fontFamily="@font/baloo2_bold"
+                            android:text="Continue"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lly_SignupConformation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lly_registration_"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:gravity="start"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/checkBoxs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            app:buttonTint="#CF891A" />
+
+                        <TextView
+                            android:id="@+id/termsandconditions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/baloo2_regular"
+                            android:text="@string/register_Page_message"
+                            android:textColor="#8F8F8F"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

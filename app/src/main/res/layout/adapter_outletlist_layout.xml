@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+    android:layout_marginStart="@dimen/_3sdp"
+    android:layout_marginEnd="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/selected_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/shopImage"
+        android:layout_gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_image"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_70sdp"
+        />
+    <LinearLayout
+        android:padding="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:fontFamily="@font/gotham_medium"
+            android:id="@+id/outletName"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorBlack"
+            android:text="Citi Cafe Changi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="@font/gothamnarrowbook"
+            android:id="@+id/outletAddress"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="#555454"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textStyle="italic|bold"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#3B3A3A"
+            android:text="Operating hours"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:textStyle="italic|bold"
+            android:textSize="@dimen/_9sdp"
+            android:textColor="#3B3A3A"
+            android:text="Monday - Friday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:textStyle="italic|bold"
+            android:textSize="@dimen/_9sdp"
+            android:textColor="#3B3A3A"
+            android:text="08.00 am - 05.00 pm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:textStyle="italic|bold"
+            android:textSize="@dimen/_9sdp"
+            android:textColor="#3B3A3A"
+            android:text="(Last Order : 4:45pm)"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+    <RelativeLayout
+        android:layout_below="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <com.app.sushi.tei.CustomViews.CustomTextView.CenturyGothic.CenturyGothicBold
+            android:id="@+id/txtProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+
+        <com.app.sushi.tei.CustomViews.CustomTextView.Opensans.OpenSansBoldTextView
+            android:id="@+id/txtPrice"
+            android:layout_below="@+id/txtProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_below="@+id/txtPrice"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/layoutQuantityParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueBoldTextView
+                android:id="@+id/txtAddCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="add to cart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layoutMaxCount"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.Opensans.OpenSansBoldTextView
+                    android:id="@+id/txtCurrentCartQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

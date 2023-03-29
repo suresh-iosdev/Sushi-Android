@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingBottom="@dimen/_20sdp"
+    tools:context="com.app.sushi.tei.activity.CmsActivity">
+
+    <!-- <include
+         android:id="@+id/layout_toolbar"
+         layout="@layout/toolbar_new"
+         app:layout_constraintTop_toTopOf="parent"/>-->
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cly_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_myAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/gillsansbold"
+                android:text="My Quick Checkout Account"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cly_child" />
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toRightOf="parent"
+                android:gravity="center"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_myAccount">
+
+                <ImageView
+                    android:id="@+id/img_rewards"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_7sdp"
+                    android:src="@drawable/sushi_rewards" />
+
+                <TextView
+                    android:id="@+id/txt_reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:gravity="center"
+                    android:text="@string/update_account"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/upgrade_acc"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@drawable/checkout_paynow_background"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:gravity="center"
+                    android:text="UPGRADE MY ACCOUNT TO ST REWARDS MEMBER"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/cly_profileDetails" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/renew_acc"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@drawable/checkout_paynow_background"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:gravity="center"
+                    android:text="Renew Account"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/cly_profileDetails" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/referral_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="parent"
+                android:gravity="center"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ref_code_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/referral_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:text="@string/referral_code"
+                        android:textColor="@color/greendark"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/share"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/generate_referral_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/checkout_paynow_background"
+                    android:fontFamily="@font/baloo2_medium"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="@string/generate_refferal_code"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_walletBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/baloo2_bold"
+                android:gravity="center"
+                android:text="Wallet Balance : 0.27 Points"
+                android:textColor="@color/colorProfile_hobby_text_unselected"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintTop_toBottomOf="@+id/referral_lyt"
+                tools:layout_editor_absoluteX="38dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txt_topup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/checkout_paynow_background"
+                android:fontFamily="@font/baloo2_medium"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="TOP UP MY WALLET"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_walletBalance"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/img_gold_member"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_topup"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txt_gold_member_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo2_bold"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintTop_toBottomOf="@+id/img_gold_member"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lly_gold_member_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_gold_member_label"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txt_become_gold_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo2_bold"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:layout_marginRight="@dimen/_60sdp"
+                app:layout_constraintTop_toBottomOf="@+id/lly_gold_member_progress_bar"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/lly_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_become_gold_member"
+                android:weightSum="3"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/member_bg"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:src="@drawable/bronze_member_icon"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BRONZE"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MEMBER"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="-12dp"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No minimum spend; \n enjoy 5% Rebate"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/text_color"
+                        android:fontFamily="@font/baloo2_medium"
+                        android:textSize="@dimen/_9ssp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="*T&amp;Cs Apply"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/text_color"
+                        android:fontFamily="@font/baloo2_medium"
+                        android:textSize="@dimen/_8ssp"/>
+
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="cashback"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/text_color"
+                        android:layout_marginTop="-10dp"
+                        android:fontFamily="@font/baloo2_medium"/>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/member_bg"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/sliver_member_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SILVER"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MEMBER"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="-12dp"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo2_medium"
+                        android:gravity="center_horizontal"
+                        android:text="Spend $300 or more to \n enjoy 10% Rebate"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_9ssp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="*T&amp;Cs Apply"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/text_color"
+                        android:fontFamily="@font/baloo2_medium"
+                        android:textSize="@dimen/_8ssp"/>
+
+                    <!--<TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo2_medium"
+                        android:gravity="center_horizontal"
+                        android:text="cashback"
+                        android:layout_marginTop="-10dp"
+                        android:textColor="@color/text_color"/>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/member_bg"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:src="@drawable/gold_member_icon"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GOLD"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MEMBER"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="-12dp"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spend $500 or more to \n enjoy 15% Rebate"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/text_color"
+                        android:fontFamily="@font/baloo2_medium"
+                        android:textSize="@dimen/_9ssp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="*T&amp;Cs Apply"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/text_color"
+                        android:fontFamily="@font/baloo2_medium"
+                        android:textSize="@dimen/_8ssp"/>
+
+                    <!--<TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo2_medium"
+                        android:gravity="center_horizontal"
+                        android:text="cashback"
+                        android:layout_marginTop="-10dp"
+                        android:textColor="@color/text_color"/>-->
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_completePfrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/baloo2_bold"
+                android:gravity="center"
+                android:padding="@dimen/_7sdp"
+                android:text="Complete your profile now"
+                android:textColor="@color/greendark"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintTop_toBottomOf="@+id/lly_label"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txt_pfrl_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/gillsansmedium"
+                android:text="Profile Details"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_completePfrl" />
+
+            <TextView
+                android:id="@+id/button_update"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/checkout_paynow_background"
+                android:fontFamily="@font/gillsansmedium"
+                android:gravity="center"
+                android:text="Update my account"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/cly_profileDetails" />
+
+            <TextView
+                android:id="@+id/txt_savedAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/baloo2_bold"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="Saved Address"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_update"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txt_addMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:fontFamily="@font/baloo2_bold"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="Add more"
+                android:textColor="@color/greendark"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/txt_savedAddress"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txt_savedAddress"/>
+
+            <View
+                android:id="@+id/view_addMore"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/greendark"
+                android:paddingBottom="@dimen/_10sdp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/txt_savedAddress"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txt_savedAddress" />
+
+            <com.app.sushi.tei.shadow.ShadowLinearLayout
+                android:id="@+id/cly_profileDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_pfrl_details">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:background="@drawable/rectangle_white"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <EditText
+                        android:id="@+id/mobilenumber_editview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/add_product_background"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center_vertical"
+                        android:hint="Phone Number:"
+                        android:imeOptions="actionNext"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:enabled="false"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintTop_toTopOf="@+id/layout_child" />
+
+                    <EditText
+                        android:id="@+id/firstname_editview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/add_product_background"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center_vertical"
+                        android:hint="First Name"
+                        android:imeOptions="actionNext"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintTop_toBottomOf="@id/mobilenumber_editview" />
+
+                    <EditText
+                        android:id="@+id/lastname_editview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/add_product_background"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center_vertical"
+                        android:hint="Last Name"
+                        android:imeOptions="actionNext"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintTop_toBottomOf="@id/firstname_editview" />
+
+                    <EditText
+                        android:id="@+id/emailaddress_editview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/add_product_background"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center_vertical"
+                        android:hint="Email:"
+                        android:imeOptions="actionDone"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintTop_toBottomOf="@id/birthday_text" />
+
+                    <TextView
+                        android:id="@+id/txt_changepass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/changepass"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintTop_toBottomOf="@id/emailaddress_editview" />
+
+                    <TextView
+                        android:id="@+id/birthday_editview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/add_product_background"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center_vertical"
+                        android:hint="Birthday"
+                        android:imeOptions="actionNext"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintTop_toBottomOf="@id/gender_editview" />
+
+                    <TextView
+                        android:id="@+id/birthday_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center"
+                        android:text="Please update your birthday to get special promotions."
+                        android:textColor="@color/greendark"
+                        android:visibility="visible"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintTop_toBottomOf="@id/birthday_editview" />
+
+
+                    <TextView
+                        android:id="@+id/gender_editview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/add_product_background"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center_vertical"
+                        android:hint="Gender"
+                        android:imeOptions="actionNext"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintTop_toBottomOf="@id/lastname_editview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.app.sushi.tei.shadow.ShadowLinearLayout>
+
+
+            <com.app.sushi.tei.shadow.ShadowLinearLayout
+                android:id="@+id/shadow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/txt_savedAddress">
+
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/colorTransparent"
+                    app:layout_constraintTop_toBottomOf="@id/cly_savedAddress" />-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cly_savedAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/rectangle_white"
+                    android:elevation="5dp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@id/shadow_layout">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:nestedScrollingEnabled="false"
+                        app:layout_constraintTop_toTopOf="@id/cly_savedAddress" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.app.sushi.tei.shadow.ShadowLinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

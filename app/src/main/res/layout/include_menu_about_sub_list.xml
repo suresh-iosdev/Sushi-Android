@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:background="@color/colorPrimaryDark">
+
+
+    <RelativeLayout
+        android:id="@+id/submenuTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/aboutBackLayout"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/aboutBackImageView"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_right_arrow_black"
+            android:layout_marginLeft="10dp"
+            />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:layout_toRightOf="@id/aboutBackLayout"
+            android:textSize="16sp"
+            android:fontFamily="@font/gothamnarrow_black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorBlack"
+
+            />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/submenuTopLayout"
+        android:layout_marginTop="5dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#EAF1F9</color>
+    <color name="colorAccent">#CE953B</color>
+
+    <color name="colorOranges">#CE953B</color>
+
+    <color name="colorBlack">#110606</color>
+    <color name="black">#000</color>
+    <color name="colorWhite">#FFFFFF</color>
+<!--    <color name="colorAsh">#BEBEBE</color>-->
+    <color name="colorAshNew">#B9B9B9</color>
+    <color name="colorAsh">#CBCBCB</color>
+    <color name="colorAsh2">#F2F2F2</color>
+    <color name="colorLightAsh">#EAEAEA</color>
+    <color name="colorTabBg">#262425</color>
+    <color name="colorSelectedTab">#282828</color>
+    <color name="colorUnSelectedTab">#797979</color>
+    <color name="colorGreen">#42C58F</color>
+    <color name="colorTabText">#777779</color>
+
+
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBlackTransparent">#90000000</color>
+    <color name="transparent_black">#33000000</color>
+    <color name="transparent_login_black">#63000000</color>
+
+    <color name="colorBottomShape">#631608</color>
+
+    <color name="colorDialogBorder">#E9CF54</color>
+    <color name="colorRewardIconBorder">#FBF26F</color>
+    <color name="colorDialogBg">#010101</color>
+    <color name="colorGetStarted">#F16B2E</color>
+    <color name="colorEditHint">#979797</color>
+    <color name="colorCalendarHeading">#bfbfbf</color>
+    <color name="colorMainCategoryBg">#494949</color>
+
+    <!--Tooltip-->
+    <color name="colorTooltipBg">#FFC560</color>
+
+
+    <!--Order history-->
+    <color name="colorOrderSelection">#4D4B4C</color>
+    <color name="colorOrderunselection">#BEBCBD</color>
+    <color name="colorUnSelectionText">#8C8887</color>
+    <color name="colorOrange">#ECB237</color>
+    <color name="colorGraylight">#F9F9F9</color>
+    <color name="colorGrayTxt1">#848484</color>
+    <color name="colorOrderitemgraycolor">#E4E4E4</color>
+    <color name="colorOrderdatetxt">#A9A9A9</color>
+    <color name="colorOrderitembg">#F4F4F4</color>
+    <color name="colorMaterial_blue_grey_200">#afbdc4</color>
+
+    <color name="colorProfile_hobby_text_unselected">#959292</color>
+    <color name="colorProfile_hobby_bg_unselected">#ffffff</color>
+
+    <color name="colorProfile_hobby_text_selected">#ffffff</color>
+    <color name="colorProfile_hobby_bg_selected">#000000</color>
+    <color name="color_Brown">#282828</color>
+
+    <color name="out_of_stock">#7E7E7E</color>
+    <color name="gery_continue">#B0B0B0</color>
+    <color name="color_background">#EDF2FA</color>
+    <color name="gstinclusive">#7F7F7F</color>
+
+    <!--Account Fragment-->
+    <color name="greenloginText">#155436</color>
+    <color name="greenRegisterText">#155436</color>
+    <color name="greenloginBorder">#586E4D</color>
+    <color name="greenRegisterBorder">#0C5B2C</color>
+    <color name="greenRegisterBorderLow">#129747</color>
+    <color name="greendark">#13612D</color>
+    <color name="whiteAnitque">#f5e7da</color>
+    <color name="text_color">#202020</color>
+    <color name="sliver">#c6c6c6</color>
+    <color name="sliverTransperent">#61CFCFCF</color>
+    <color name="gray">#BCFFFFFF</color>
+    <color name="whitesmoke">#ececec</color>
+    <color name="summaryLine">#272727</color>
+
+
+    <!--SplashActivity-->
+    <color name="loginborder">#537245</color>
+    <color name="registerborder">#7a8d33</color>
+
+
+    <color name="graydark">#38433b</color>
+    <color name="grayvdark">#39433b</color>
+    <color name="greentabtext">#005B29</color>
+
+
+    <color name="grayloginsub">#827E7C</color>
+</resources>

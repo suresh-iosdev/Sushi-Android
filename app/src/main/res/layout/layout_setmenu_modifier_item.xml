@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginBottom="7dp"
+    android:id="@+id/layoutChild"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtModifierName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/baloo2_bold"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_10ssp" />
+
+    <ImageView
+        android:id="@+id/imgChecked"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:padding="2dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/selected"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:id="@+id/book_navigation_search_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtModifierName"
+        android:background="#CDCDCD" />
+
+</RelativeLayout>

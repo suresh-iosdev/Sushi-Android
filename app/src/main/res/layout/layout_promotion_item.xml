@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#F9F9F9"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:id="@+id/layouExpire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_200sdp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:fontFamily="@font/gothamnarrow_black"
+            android:gravity="start"
+            android:layout_marginLeft="-30dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/txtDateLeft"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="25dp"
+            android:background="#ED3A4B"
+            android:paddingTop="8dp"
+            android:rotation="-45"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_8ssp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutPromoCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlack"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtPromocodeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="PRO CODE   :"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_8ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPromoCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtPromocodeLabel"
+                    android:paddingLeft="2dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#444037"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/layoutView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="#444037"
+                android:paddingLeft="16dp"
+                android:paddingTop="5dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/gothamnarrowultra"
+                    android:gravity="center"
+                    android:text="View"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                     />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layoutRedeem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="#00B1A0"
+                android:paddingLeft="16dp"
+                android:paddingTop="5dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/gothamnarrowultra"
+                    android:gravity="center"
+                    android:text="Redeem"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                 />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".activity.SettingsActivity">
+            <include
+                android:id="@+id/toolBar"
+                layout="@layout/toolbar_new"/>
+
+            <RelativeLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/backLayout"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_arrow_white" />
+                    <LinearLayout
+                        android:id="@+id/toolbarBack"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:rotation="0"
+                            android:src="@drawable/ic_right_arrow_black" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/headerTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Settings"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_15ssp"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/baloo2_bold"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:text="Push Notification"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/baloo2_bold"/>
+
+
+                <ToggleButton
+                    android:id="@+id/togglenotification"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/toggle_selector"
+                    android:checked="true"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:text="Email Notification"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/baloo2_bold" />
+
+
+                <ToggleButton
+                    android:id="@+id/toggleemail"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/toggle_selector"
+                    android:checked="true"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:id="@+id/navigationView"
+            android:layout_gravity="left"
+            android:visibility="visible"
+            android:background="@android:color/transparent">
+
+
+            <RelativeLayout
+                android:id="@+id/includeheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/mainMenuLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/incLayout"
+                        layout="@layout/drawer_menul_list_layout" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/subMenuLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/incLayout"
+                        layout="@layout/include_menu_about_sub_list" />
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

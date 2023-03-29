@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/mainPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/toolBar"
+                    layout="@layout/toolbar" />
+
+
+                    <!-- MAIN CONTENT -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:descendantFocusability="beforeDescendants"
+                            >
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/mRecyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+
+                            <TextView
+                                android:fontFamily="@font/gothamnarrow_black"
+                                android:id="@+id/txtNoRecords"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="No Product on this outlet!"
+                                android:gravity="center"
+                                android:textSize="@dimen/_12ssp"
+                                android:visibility="gone"
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/takeAwayLayout"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/button_back_orange"
+                                android:layout_alignParentBottom="true"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <RelativeLayout
+                                    android:padding="@dimen/_5sdp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_centerVertical="true"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentLeft="true">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_28sdp"
+                                            android:layout_height="@dimen/_28sdp"
+                                            android:src="@drawable/asset51" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_centerInParent="true"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:textSize="@dimen/_15ssp"
+                                            android:text="PICKUP"
+                                            android:fontFamily="@font/gotham_light"
+                                            android:textColor="@color/colorWhite"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            />
+
+                                        <TextView
+                                            android:id="@+id/ouletName"
+                                            android:textSize="@dimen/_11ssp"
+                                            android:textStyle="bold"
+                                            android:fontFamily="@font/helvetica"
+                                            android:textColor="@color/colorWhite"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true">
+
+                                      <ImageView
+                                          android:layout_marginRight="@dimen/_5sdp"
+                                          android:layout_marginTop="@dimen/_5sdp"
+                                          android:layout_marginEnd="@dimen/_5sdp"
+                                          android:src="@drawable/asset50"
+                                          android:layout_width="@dimen/_15sdp"
+                                          android:layout_height="@dimen/_15sdp"
+                                         />
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+                      <!--  <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/fragmentContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                        </FrameLayout>-->
+                    </LinearLayout>
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:id="@+id/navigationView"
+            android:layout_gravity="left"
+            android:visibility="visible"
+            android:background="@android:color/transparent">
+
+
+            <RelativeLayout
+                android:id="@+id/includeheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/mainMenuLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/incLayout"
+                        layout="@layout/drawer_menul_list_layout" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/subMenuLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/incLayout"
+                        layout="@layout/include_menu_about_sub_list" />
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

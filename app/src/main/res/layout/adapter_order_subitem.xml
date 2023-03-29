@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/subProductLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.1"
+            android:fontFamily="@font/gillsansmedium"
+            android:gravity="start"
+            android:textColor="#222222"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/productQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="0.9"
+            android:fontFamily="@font/gillsansmedium"
+            android:gravity="center"
+            android:textColor="#222222"
+            android:textSize="@dimen/_10ssp" />
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:fontFamily="@font/gillsansmedium"
+                android:text="$"
+                android:textColor="#222222"
+                android:textSize="@dimen/_8ssp" />
+
+            <TextView
+                android:id="@+id/productCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gillsansmedium"
+                android:textColor="#222222"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

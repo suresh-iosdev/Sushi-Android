@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/lly_subImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/subImage"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sasmple" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/productNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/txtProductName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/gillsansmedium"
+                            android:maxLines="2"
+                            android:text="Product Name"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_14ssp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/tagimageRecyclerview"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_weight="0.3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtProductDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:text="Sample Description of the product will be availabel here"
+                        android:textColor="@color/whitesmoke"
+                        android:textSize="@dimen/_9ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="0.3"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:text="$"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:id="@+id/txt_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:text="32.90"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:src="@drawable/cow"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:src="@drawable/ic_pig"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:src="@drawable/cock"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/milkbottle"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lly_expiryAvailable"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_expiryDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:fontFamily="@font/gillsans"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/txt_available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:fontFamily="@font/gillsans"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lly_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:text="$"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:id="@+id/txtPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:text="32.90"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_14ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/img_heart"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/_7sdp"
+                        android:src="@drawable/heart_unselect" />
+
+                    <TextView
+                        android:id="@+id/txtAddCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_gravity="end"
+                        android:background="@drawable/add_to_cart_background_round"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:text="Add To Cart"
+
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rly_voucherLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/img_voucher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/voucher_cardview" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_availableVoucher"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:src="@drawable/voucher_badge_shape" />
+
+            <TextView
+                android:id="@+id/txt_avaCoupons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/img_availableVoucher"
+                android:layout_alignTop="@id/img_availableVoucher"
+                android:layout_alignEnd="@id/img_availableVoucher"
+                android:layout_alignBottom="@+id/img_availableVoucher"
+                android:fontFamily="@font/gillsans"
+                android:gravity="center"
+                android:text="11"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_availableVoucher"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:fontFamily="@font/gillsans"
+                android:gravity="center"
+                android:text="x \n Available"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_drinksQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:fontFamily="@font/gillsansmedium"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:text="Buy 10 Drinks"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gillsans"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:text="Expiry "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_8ssp" />
+
+                <TextView
+                    android:id="@+id/txt_expAva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_drinksQty"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_15ssp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_expAva"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:fontFamily="@font/gillsansmedium"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:text="item short description will be in this area"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_8ssp" />
+
+            <LinearLayout
+                android:id="@+id/lly_voucherPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:text="$"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12ssp" />
+
+
+                <TextView
+                    android:id="@+id/txt_voucherPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:gravity="center_horizontal"
+                    android:text="50.00"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_OrderNow"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/add_to_cart_background_round"
+                android:fontFamily="@font/gillsansmedium"
+                android:gravity="center"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:text="Add To Cart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#242123" />
+
+</LinearLayout>
+

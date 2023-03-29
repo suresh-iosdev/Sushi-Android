@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.sushi.tei">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> <!-- card.io support -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <application
+        android:name=".SushiTeiApplication"
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,allowBackup"
+        tools:targetApi="n">
+        <activity
+            android:name=".netsclicktest.NetsHome"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity.NetsTestActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity.VerificationActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LandingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ChooseOutletActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.FiveMenuActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.SubCategoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.MemberForgotPasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.MenuCategoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MaintenanceActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.RegistrationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ThanksActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.OutletActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent1" />
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent1"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.PaymentActivityNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.CartActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.OrderSummaryActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.CmsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.FiveMenuActivityNew"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.ViewOrderDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent1" />
+        <activity
+            android:name=".activity.VieworderRewardsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent1" />
+        <activity
+            android:name=".activity.ViewOrderDetailForRewardsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent1" />
+        <activity
+            android:name=".activity.ContactUsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MemberLogRegActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.FavouriteActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SearchProductDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent1" />
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.app.sushi.tei"
+                    android:pathPrefix="/account/resetpassword"
+                    android:scheme="https" />
+                <data
+                    android:host="com.app.sushi.tei"
+                    android:pathPrefix="/account/resetpassword"
+                    android:scheme="http" />
+                <data
+                    android:host="com.app.sushi.tei"
+                    android:pathPrefix="/account/resetpassword"
+                    android:scheme="android-app" />
+                <data
+                    android:host="com.app.sushi.tei"
+                    android:pathPrefix="/account/resetpassword"
+                    android:scheme="app" />
+                <data
+                    android:host="ceres.ninjaos.com"
+                    android:pathPrefix="/account/resetpassword"
+                    android:scheme="http" />
+                <data
+                    android:host="ceres.ninjaos.com"
+                    android:pathPrefix="/account/resetpassword"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.MemberResetPasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.app.sushi.tei"
+                    android:pathPrefix="/account/resetmemberpassword"
+                    android:scheme="https" />
+                <data
+                    android:host="com.app.sushi.tei"
+                    android:pathPrefix="/account/resetmemberpassword"
+                    android:scheme="http" />
+                <data
+                    android:host="com.app.sushi.tei"
+                    android:pathPrefix="/account/resetmemberpassword"
+                    android:scheme="android-app" />
+                <data
+                    android:host="com.app.sushi.tei"
+                    android:pathPrefix="/account/resetmemberpassword"
+                    android:scheme="app" />
+                <data
+                    android:host="ceres.ninjaos.com"
+                    android:pathPrefix="/account/resetmemberpassword"
+                    android:scheme="http" />
+                <data
+                    android:host="ceres.ninjaos.com"
+                    android:pathPrefix="/account/resetmemberpassword"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.ActivationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.app.sushi.tei"
+                    android:pathPrefix="/account/activation"
+                    android:scheme="android-app" />
+                <data
+                    android:host="com.app.sushi.tei"
+                    android:pathPrefix="/account/activation"
+                    android:scheme="app" />
+                <data
+                    android:host="com.app.sushi.tei"
+                    android:pathPrefix="/account/activation"
+                    android:scheme="http" />
+                <data
+                    android:host="com.app.sushi.tei"
+                    android:pathPrefix="/account/activation"
+                    android:scheme="https" />
+                <data
+                    android:host="ceres.ninjaos.com"
+                    android:pathPrefix="/account/activation"
+                    android:scheme="http" />
+                <data
+                    android:host="ceres.ninjaos.com"
+                    android:pathPrefix="/account/activation"
+                    android:scheme="https" />
+                <!--
+                 <data
+                     android:host="ccpl.ninjaos.com"
+                     android:pathPrefix="/account/activation"
+                     android:scheme="http" />
+                 <data
+                     android:host="ccpl.ninjaos.com"
+                     android:pathPrefix="/account/activation"
+                     android:scheme="https" />
+                -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".services.NotificationView"
+            android:exported="true"
+            android:parentActivityName=".activity.SubCategoryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.sushi.tei.activity.SubCategoryActivity" />
+        </activity>
+
+        <service
+            android:name=".services.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+  <service android:name=".services.MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        -->
+        <!--
+ <service
+            android:name=".Notification.NotificationExtender"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+        -->
+        <activity
+            android:name=".activity.PaymentProcessingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".activity.payment.MainActivity"
+            android:exported="true"
+            android:label="@string/activity_main" />
+        <activity
+            android:name=".activity.payment.CheckoutActivity"
+            android:exported="true"
+            android:label="@string/activity_checkout" />
+        <activity
+            android:name="co.omise.android.ui.CreditCardActivity"
+            android:exported="true"
+            android:theme="@style/OmiseSDKTheme" />
+        <activity
+            android:name=".activity.payment.ReceiptActivity"
+            android:exported="true"
+            android:label="@string/activity_receipt" />
+        <activity
+            android:name="co.omise.android.ui.AuthorizingPaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MemberBenefitActivity"
+            android:exported="true"
+            android:label="@string/member_benefit"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <!--
+ <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

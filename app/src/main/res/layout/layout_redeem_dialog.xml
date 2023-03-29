@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#63000000"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/place_holder_sushi_tei" />
+
+            <RelativeLayout
+                android:id="@+id/layoutClose"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_keyboard_arrow_down_black_24dp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:src="@drawable/asset58" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+
+                <TextView
+                    android:fontFamily="@font/gillsansmedium"
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:text="Promotion title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_13sdp" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/promo"
+                    android:layout_below="@+id/txtTitle"
+                    android:orientation="vertical"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/promoValueText"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="@dimen/_13sdp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:background="@drawable/loginbutton"
+                        android:text="texst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/validDate"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textSize="@dimen/_11sdp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:text="text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:fontFamily="@font/gillsansmedium"
+                    android:id="@+id/heading"
+                    android:layout_below="@+id/promo"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Highlights"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_11ssp"
+                    android:visibility="gone"/>
+
+                <WebView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_below="@+id/heading"
+                    android:layout_width="match_parent"
+                    android:id="@+id/termswebview"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                </WebView>
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/txtRedeemDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:lines="10"
+                    android:layout_below="@+id/heading"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutRedeem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_back_light_blue">
+
+        <TextView
+            android:fontFamily="@font/gillsansmedium"
+            android:id="@+id/txtDone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Apply Now"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

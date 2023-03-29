@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<network-security-config>
+    <domain-config>
+        <domain includeSubdomains="true">mtls.uat-api.nets.com.sg</domain>
+        <trust-anchors>
+            <certificates src="@raw/__ninjaos_com.crt.crt"/>
+        </trust-anchors>
+    </domain-config>
+</network-security-config>-->
+
+<!--
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">mtls.uat-api.nets.com.sg</domain>
+    </domain-config>
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="@raw/__ninjaos_com"/>
+            &lt;!&ndash;            <certificates src="system"/>&ndash;&gt;
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>-->
+
+
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">118.201.98.249</domain>
+    </domain-config>
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user"/>
+            <!--<certificates src="system"/>-->
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>

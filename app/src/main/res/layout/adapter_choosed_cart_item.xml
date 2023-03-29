@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+ <LinearLayout
+        android:layout_marginTop="@dimen/_1sdp"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+      android:background="#EEF3F9"
+        android:scaleType="fitXY"
+        android:layout_weight="0.7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+       />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:padding="@dimen/_7sdp"
+        android:orientation="vertical"
+        android:layout_weight="1.3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+     <TextView
+         android:textSize="@dimen/_13ssp"
+         android:text=""
+         android:textStyle="bold"
+         android:fontFamily="@font/gotham_medium"
+         android:id="@+id/cart_product_name"
+         android:textColor="@color/colorBlack"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="@font/gothamnarrowbook"
+            android:text=""
+            android:textColor="#898D90"
+            android:textSize="@dimen/_10ssp" />
+        <TextView
+            android:textSize="@dimen/_10ssp"
+            android:text=""
+            android:textColor="#898D90"
+            android:fontFamily="@font/gothamnarrowbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="end"
+        android:gravity="top|end"
+
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           >
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:textSize="@dimen/_11ssp"
+                android:text="$"
+                android:textStyle="bold"
+                android:fontFamily="@font/gotham_medium"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/_15ssp"
+                android:text="32.90"
+                android:textStyle="bold"
+                android:fontFamily="@font/gotham_medium"
+                android:id="@+id/cart_product_price"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+  <TextView
+      android:id="@+id/specialmessagechoosedadpter"
+      android:paddingBottom="@dimen/_10sdp"
+      android:paddingStart="@dimen/_10sdp"
+      android:paddingEnd="@dimen/_10sdp"
+      android:visibility="gone"
+      android:textSize="@dimen/_10ssp"
+      android:fontFamily="@font/gothamnarrowbook"
+      android:text="Special message will be here.Special message will be here.Special message will be here.Special will be here.Special message will be here."
+      android:textColor="#898D90"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+     <View
+         android:layout_marginStart="@dimen/_5sdp"
+         android:layout_marginEnd="@dimen/_5sdp"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@color/colorLightAsh">
+
+     </View>
+ </LinearLayout>
+
+
+</RelativeLayout>

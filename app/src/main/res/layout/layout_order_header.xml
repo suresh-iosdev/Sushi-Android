@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/orderlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorBlack"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/orderBadgeLayout"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgDelivery"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueBoldTextView
+                    android:id="@+id/txtDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/imgDelivery"
+                    android:gravity="center"
+                    android:text="Delivery/Takeaway"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/orderBadgeLayout"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="0dp"
+                android:background="@drawable/ic_keyboard_arrow_down_black_24dp">
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueRegularTextView
+                    android:id="@+id/orderCountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="0"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutBento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorOrderunselection"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/layoutBentoBadge"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgBento"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueBoldTextView
+                    android:id="@+id/txtBento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imgBento"
+                    android:gravity="center"
+                    android:text="Bento orders"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutBentoBadge"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+                >
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueRegularTextView
+                    android:id="@+id/txtBentoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

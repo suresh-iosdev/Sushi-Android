@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="5dp"
+    android:background="#F6F6F6"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.app.sushi.tei.CustomViews.CustomTextView.Opensans.OpenSansBoldTextView
+            android:id="@+id/txtDateLeft"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingRight="25dp"
+            android:rotation="-45"
+            android:text="Completed"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutPromoCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.app.sushi.tei.CustomViews.CustomTextView.Opensans.OpenSansBoldTextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/foranydrink"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:textColor="@color/colorBlack"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anydrinttxt"
+                android:background="#ED3A4B"
+                android:gravity="center">
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.Opensans.OpenSansBoldTextView
+                    android:id="@+id/txtPromoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="promo code"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="7.5dp"
+                    android:textStyle="bold" />
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.Opensans.OpenSansBoldTextView
+                    android:id="@+id/txtPromoCodeRedeem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtPromoLabel"
+                    android:paddingLeft="2dp"
+                    android:text=" ABC123"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#444037"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/layoutView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="#444037"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:fontFamily="@font/gothamnarrow_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="View"
+                    android:textSize="@dimen/_12ssp"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                   />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layoutRedeem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:fontFamily="@font/gothamnarrow_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Redeemed"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/colorWhite" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

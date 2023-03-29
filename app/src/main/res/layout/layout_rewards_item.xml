@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#EDEAEB">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/layoutDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp">
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueBoldTextView
+                    android:id="@+id/txtAvailabilityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/layoutDelivery">
+
+                <ImageView
+                    android:id="@+id/imgCalendar"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imgCalendar"
+                    android:text="07/05/2017"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/layoutDate">
+
+                <ImageView
+                    android:id="@+id/imgTime"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imgTime"
+                    android:text="4.00PM"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/splitview"
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@color/colorBlack"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/layoutViewReciept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/splitview"
+
+                >
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueBoldTextView
+                    android:id="@+id/txtViewReceipt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:text="View Receipt"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutOrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/ic_keyboard_arrow_down_black_24dp">
+
+        <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueRegularTextView
+            android:id="@+id/txtOrderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textAllCaps="true"
+            android:textColor="#a2a1a1"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueRegularTextView
+            android:id="@+id/txtOrderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/txtOrderLabel"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="123455"
+            android:textColor="#a2a1a1"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:paddingBottom="3dp">
+
+
+            <RelativeLayout
+                android:id="@+id/layoutOrderTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueBoldTextView
+                    android:id="@+id/txtTotalLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueBoldTextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/txtTotalLabel"
+                    android:text="$23.50"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp">
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueBoldTextView
+                    android:id="@+id/txtEarnedLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="earned"
+                    android:textAllCaps="true"
+                    android:textColor="#AFADAE"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <com.app.sushi.tei.CustomViews.CustomTextView.BebasNeue.BebasNeueBoldTextView
+                    android:id="@+id/txtPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/txtEarnedLabel"
+                    android:gravity="top"
+                    android:text="1000 points"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

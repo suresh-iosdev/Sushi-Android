@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        >
+
+        <TextView
+            android:id="@+id/txtModifierName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/colorWhite"
+            android:fontFamily="@font/gillsansmedium"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="15dp"
+            android:text="Mod Value"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12ssp" />
+
+        <ImageView
+            android:id="@+id/imgChecked"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:focusable="false"
+            android:src="@drawable/asset54" />
+
+
+        <View
+            android:id="@+id/book_navigation_search_view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtModifierName"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="#c4c4c4" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/modifiersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topLayout"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

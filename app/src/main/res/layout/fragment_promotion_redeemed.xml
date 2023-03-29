@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewPromotionRedeem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:visibility="gone"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/txtEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:fontFamily="@font/gillsansmedium"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_12ssp"
+        android:text="No Promotions Redeemed" />
+
+</RelativeLayout>

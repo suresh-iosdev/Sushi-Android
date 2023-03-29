@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.sushi.tei.shadow.ShadowLinearLayoutOutlet xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/selected_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_3sdp"
+    android:layout_marginEnd="@dimen/_3sdp"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lnr_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="@dimen/_5sdp"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/shopImage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/place_holder_sushi_tei" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/outletName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/gillsansmedium"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/outletAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/gillsans"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_9ssp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txt_operationSlot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/gillsans"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_9ssp"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/gillsans"
+                android:text="08.00 am - 05.00 pm"
+                android:textColor="#3B3A3A"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="italic|bold"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/gillsans"
+                android:text="(Last Order : 4:45pm)"
+                android:textColor="#3B3A3A"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="italic|bold"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight=".8">
+
+                    <ImageView
+                        android:id="@+id/img_location"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/txt_outletDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/gillsans"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_8ssp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/time" />
+
+                    <TextView
+                        android:id="@+id/txt_waitingMins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/gillsans"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_8ssp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight=".2"
+                    android:src="@drawable/timer" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.app.sushi.tei.shadow.ShadowLinearLayoutOutlet>

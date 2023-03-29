@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.sushi.tei.shadow.ShadowLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_130sdp"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/sliver"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#F9F9F9"
+                android:scaleType="fitXY"
+                android:src="@drawable/place_holder_sushi_tei" />
+
+            <TextView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="match_parent"
+                android:background="@drawable/trapezoid_white"
+                android:gravity="end"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/txt_promotion_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/text_color"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"/>
+
+                <LinearLayout
+                    android:id="@+id/lly_offerPercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/txt_promotion_label">
+
+                    <TextView
+                        android:id="@+id/clientCurrency"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="$"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txt_promotion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_promotion_label"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15ssp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:fontFamily="@font/gillsans"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/txtDateLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:layout_below="@+id/lly_offerPercentage"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sliver"
+                    android:text=""
+                    android:textSize="@dimen/_10ssp"/>
+
+                <TextView
+                    android:id="@+id/txtPromoCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDateLeft"
+                    android:paddingLeft="2dp"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="@color/greendark"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/gillsansmedium"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_alignParentBottom="true">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/sasmple"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gillsansmedium"
+                            android:gravity="center"
+                            android:text="VIEW NOW"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutRedeem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:background="@drawable/checkout_paynow_background"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/txt_redeem"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gillsansmedium"
+                            android:gravity="center"
+                            android:text="REDEEM"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.app.sushi.tei.shadow.ShadowLinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    android:background="@drawable/rectangle_white"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_50sdp">
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/asset58"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"/>
+
+    <TextView
+        android:id="@+id/txt_availableRewardPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gillsansmedium"
+        android:textSize="@dimen/_12ssp"
+        android:text="You can redeem 12points"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_color"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_myAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gillsansmedium"
+            android:text="E-Wallet"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_17ssp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/rewards_icon"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_margin="@dimen/_5sdp"/>
+
+        <LinearLayout
+            android:id="@+id/lly_earnedPoints"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <TextView
+                android:id="@+id/txtLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Congrats! You Have Earned"
+                android:fontFamily="@font/gillsansmedium"
+                android:visibility="gone"
+                android:textColor="@color/transparent_login_black"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txtRewardPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gothamnarrow_black"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/out_of_stock"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Receive 5% point rebate with every order placed"
+                android:fontFamily="@font/gothamnarrow_black"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_11ssp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtRedeemPoints"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/add_product_background"
+            android:fontFamily="@font/gillsans"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/_12ssp"
+            android:hint="Enter points value here"
+            android:layout_below="@+id/txt_availableRewardPoints"
+            android:textColorHint="@color/sliver"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:fontFamily="@font/gillsans"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/text_color"
+            android:text="(1 point = 1$)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_below="@+id/txtRedeemPoints"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtRedeemApply"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/checkout_paynow_background"
+            android:fontFamily="@font/gillsansmedium"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="APPLY NOW"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/txtRedeemPoints"
+            android:layout_marginRight="8dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_20sdp"/>
+
+</LinearLayout>

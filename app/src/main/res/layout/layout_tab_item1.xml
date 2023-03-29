@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/layoutTabItem"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imgTabItem"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/account_unselect"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/txtTabItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgTabItem"
+            android:fontFamily="@font/gillsansmedium"
+            android:textColor="@color/greentabtext"
+            android:textSize="@dimen/_8ssp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="Promotions"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:id="@+id/txtBadge"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/drawer_badge_shape"
+            android:fontFamily="@font/gillsans"
+            android:singleLine="true"
+            android:textColor="@color/greentabtext"
+            android:textSize="10sp"
+            android:text="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/imgTabItem"
+            android:layout_toRightOf="@id/imgTabItem"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="2dp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

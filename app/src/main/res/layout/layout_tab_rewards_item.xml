@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:id="@+id/layoutTabItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+   >
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imgTabItem_reward"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/txtTabItem_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgTabItem_reward"
+            android:textAllCaps="false"
+            android:fontFamily="@font/baloo2_medium"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12ssp" />
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtBadge"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_toRightOf="@+id/txtTabItem"-->
+            <!--android:background="@drawable/drawer_badge_shape"-->
+            <!--android:gravity="center"-->
+            <!--android:minHeight="32dp"-->
+            <!--android:minWidth="32dp"-->
+            <!--android:padding="2dp"-->
+            <!--android:fontFamily="@font/centuri_gothic"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textSize="9sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:visibility="gone"-->
+
+            <!--/>-->
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

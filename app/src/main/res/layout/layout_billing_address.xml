@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyoutBilling"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="23dp"
+    android:layout_marginRight="23dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtBillingAddressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Billing Address"
+            android:textColor="@color/colorBlack"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/layoutSameDeliveryAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/txtSame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Same As Delivery Address"
+                android:textColor="@color/colorBlack"
+                android:textSize="9sp" />
+
+            <ImageView
+                android:id="@+id/imgChecked"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/txtSame"
+                android:src="@drawable/selected" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBillingAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtBillingAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:gravity="center_vertical"
+            android:hint="Billing Address"
+            android:imeOptions="actionNext"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/edtPincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:hint="Pin code"
+                android:imeOptions="actionNext"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edtBillingUnitNo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:hint="Unit No 1"
+                android:imeOptions="actionNext"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edtBillingUnitNo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:hint="Unit No 2"
+                android:imeOptions="actionDone"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

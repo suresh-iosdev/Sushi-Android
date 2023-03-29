@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/claimLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:fontFamily="@font/gillsansmedium"
+        android:text="Promotions"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_17ssp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:fontFamily="@font/gillsansmedium"
+        android:text="Redeem your promotions"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_17ssp"
+       />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="8dp">
+
+        <EditText
+            android:id="@+id/edtPromotion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/layoutApply"
+            android:background="@drawable/add_promotion_bg"
+            android:fontFamily="@font/gillsans"
+            android:hint="Add your Promo/Invite Code Here"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="@dimen/_10sdp" />
+
+        <RelativeLayout
+            android:id="@+id/layoutApply"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/add_promotion_applynoe">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/gillsansmedium"
+                android:text="Apply now"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

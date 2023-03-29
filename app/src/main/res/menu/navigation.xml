@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/account_unselect"
+        android:title="Account"/>
+
+
+    <item
+        android:id="@+id/navigation_orders"
+        android:icon="@drawable/orders_unselect"
+        android:title="Orders" />
+
+    <item
+        android:id="@+id/navigation_rewards"
+        android:icon="@drawable/rewards_unselect"
+        android:title="Rewards" />
+
+    <item
+        android:id="@+id/navigation_voucher"
+        android:icon="@drawable/voucher_unselected"
+        android:title="Vouchers" />
+
+    <item
+        android:id="@+id/navigation_promotions"
+        android:icon="@drawable/promotions_unselect"
+        android:title="Promotion" />
+</menu>

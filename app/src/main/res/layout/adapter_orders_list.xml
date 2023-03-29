@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/orderhistorytimelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#282828"
+        android:padding="@dimen/_5sdp">
+
+
+        <RelativeLayout
+            android:id="@+id/leftlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_centerVertical="true">
+
+            <RelativeLayout
+                android:id="@+id/dateimagelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+
+
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/order_date_24dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/datetextlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_toRightOf="@id/dateimagelayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25/06/2019"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/ordertimeimagelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toRightOf="@id/datetextlayout">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/order_time_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_toRightOf="@id/ordertimeimagelayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4:00 pm"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_10ssp"
+
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/leftlayout"
+            android:layout_toRightOf="@id/leftlayout"
+            android:gravity="center_vertical|end">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW RECEIPT"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_9ssp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/orederpickuplayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_below="@id/orderhistorytimelayout"
+        android:padding="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/ordernumberlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER NO"
+                android:textColor="#C0C0C0"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/pickfromlayout"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ordernumberlayout">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="PICKUP FROM"
+                android:textColor="#C0C0C0"
+
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+android:layout_below="@id/ordernumberlayout"
+            android:gravity="center"
+            android:id="@+id/ordernumvaluelay"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="170725.E1001"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:layout_below="@id/pickfromlayout"
+        >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Citi Cafe Cahngi"
+                android:textColor="#222222"
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@drawable/order_divider"
+android:layout_below="@id/ordernumvaluelay"
+            android:id="@+id/view"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:layout_height="@dimen/_5sdp">
+        </View>
+
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_below="@id/view"
+            android:gravity="center"
+android:id="@+id/totallayout"
+
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL"
+                android:textColor="#000000"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_below="@id/view"
+            android:gravity="center"
+            android:id="@+id/dollarlayout"
+            android:layout_marginLeft="@dimen/_10sdp"
+   android:layout_toRightOf="@id/totallayout"
+
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:id="@+id/rupeeslayout"
+android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/dollarlayout"
+            android:layout_below="@id/view"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+
+
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="bottom"
+                android:text="116.00"
+
+                android:textSize="@dimen/_20ssp"
+                android:textColor="#222222"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@id/rupeeslayout"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:backgroundTint="#CE953B"
+            android:background="@drawable/sorderstatus_background"
+android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:layout_below="@id/view"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:gravity="center"
+                android:text="RECEIVED"
+
+                android:textSize="@dimen/_15ssp"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/orederpickuplayout"-->
+        <!--android:id="@+id/ordervalueslayout"-->
+
+        <!--android:padding="@dimen/_5sdp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/ordernumbervaluelayout"-->
+            <!--android:layout_width="wrap_content"-->
+
+
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="170725.E1001"-->
+                <!--android:textColor="#000000"-->
+                <!--android:textStyle="bold" />-->
+
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/ordernumbervaluelayout">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="end"-->
+                <!--android:text="Citi Cafe Cahngi"-->
+                <!--android:textColor="#222222"-->
+                <!--android:textStyle="normal" />-->
+
+
+        <!--</RelativeLayout>-->
+
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_below="@id/orederpickuplayout"-->
+        <!--android:padding="@dimen/_5sdp"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/order_divider"-->
+
+
+            <!--android:layout_height="@dimen/_5sdp">-->
+        <!--</View>-->
+    <!--</RelativeLayout>-->
+
+
+
+</RelativeLayout>

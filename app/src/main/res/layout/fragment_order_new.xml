@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_new" />
+
+        <TextView
+            android:id="@+id/txt_myAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/mariyadpro_bold"
+            android:text="Orders"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_15ssp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_2sdp"
+            android:id="@+id/layoutDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+
+                android:id="@+id/orderDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <com.app.sushi.tei.CustomViews.CustomViewPager.WrapContentViewPager1
+                    android:id="@+id/tabLayout"
+                    style="@style/MyCustomTabLayoutNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginLeft="@dimen/_18sdp"
+                    android:id="@+id/view1"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="3dp"
+                    android:layout_toLeftOf="@+id/view2"
+                    android:background="@color/greendark"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorWhite"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:id="@+id/view3"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="3dp"
+                    android:layout_toRightOf="@+id/view2"
+                    android:background="@color/greendark"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tabLayout"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutBentoParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/bentoorderDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/bentotabLayout"
+                    style="@style/MyCustomTabLayoutNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+
+                android:background="#ededed"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/bentoview1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/bentoview2"
+                    android:background="#EB6538"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/bentoview2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#ededed"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/bentoview3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bentoview2"
+                    android:background="#EB6538"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <com.app.sushi.tei.CustomViews.CustomViewPager.WrapContentViewPager1
+                android:id="@+id/bentopager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tabLayout"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

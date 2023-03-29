@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Sushi Tei</string>
+    <string name="product_description">Sample description of the product will be available here Sample description of the product will be available hereSample description of the product will be available here will be available here </string>
+    <string name="register_Page_message">By proceeding with the signup/sign in,I hereby
+agree to the <u>privacy policy</u> and <u>terms &amp; conditions</u>
+of this website &amp; its marketing partners to receive
+promotion &amp; marketing materials.</string>
+
+    <string name="terms_message">I agree with Sushi Tei.<u>terms &amp; conditions</u></string>
+
+    <string name="submit_msg">By submitting this form, I hereby give my consent to Sushi Tei Ptd Ltd to collect,
+        use and disclose my personal data for the purposes of processing my membership application,
+        administering my membership, as well as notifying and contacting me regarding membership,
+        sending me marketing, advertising and promotional information about products/services
+        that Sushi Tei Pte Ltd and its affiliates may be offering, via calls, text messages,
+        post and emails. I am aware that I may update the personal data and/or withdraw the
+        consent provided by me at any time by contacting dpo@sushitei.com.
+        The Sushi Tei Pte Ltd Privacy Policy and how my personal
+        data will be used is also available <u>here</u> <!--and <u>terms &amp; conditions</u>-->
+of this website &amp; its marketing partners to receive
+promotion &amp; marketing materials.</string>
+
+
+    <string name="register_member">I want to become Sushi Tei Member</string>
+    <string name="register_sms_sub">SMS Subscription</string>
+    <string name="register_email_sub">Email Subscription</string>
+    <!--    <a href='http://www.google.com'> Google </a>-->
+    <string name="register_reward">Sign up for S$68 and receive ST $80 for immediete use. <a href='http://www.google.com'><font color='#4E6C45'><u>Click here</u></font></a> to view more</string>
+    <string name="update_account">Upgrade your account for S$68 and receive ST $80 for immediete use. <a href='http://www.google.com'><font color='#13612D'><u>Click here</u></font></a> to view more</string>
+    <string name="terms_condition">I consent to receive coupons,promotions and news from Spize, its franchisees and affiliates and understand and agree that my information will be used as described here and in spize Privacy Policy and Terms of Service.</string>
+    <string name="splash_getstarted">get started</string>
+
+    <string name="googlemap_key">AIzaSyBct_d3osKDJA7INYJizkQo_gD5vV0Hug0</string>
+    <string name="facebook_app_id">181185959334277</string>   <!--   181185959334277 this id from mobileappsdev login-->
+
+
+    <string name="send_mail"><u>Send Mail</u></string>
+
+
+    <string-array name="card_names">
+
+        <item>Delivery</item>
+        <item>Takeaway</item>
+        <item>Bento</item>
+        <item>Reservation</item>
+
+    </string-array>
+
+    <integer-array name="card_icons">
+
+        <item>@drawable/ic_keyboard_arrow_down_black_24dp</item>
+        <item>@drawable/ic_keyboard_arrow_down_black_24dp</item>
+        <item>@drawable/ic_keyboard_arrow_down_black_24dp</item>
+        <item>@drawable/ic_keyboard_arrow_down_black_24dp</item>
+
+    </integer-array>
+
+    <string name="foranydrink">For Any Drink You Like</string>
+    <string name="loading_progress">Loading...</string>
+    <string name="VIEW_RECEIPT"><u>VIEW RECEIPT</u></string>
+    <string name="PROMOTION_POINTS">  You have <u>2 Promotions</u> Available</string>
+    <string name="REWARD_POINTS">You have <u>100 Points</u> Available</string>
+
+
+    <string name="activity_checkout" translatable="false">Checkout</string>
+    <string name="activity_main" translatable="false">Omise Co., Ltd.</string>
+    <string name="changepass"><u>Change Password</u></string>
+    <string name="activity_receipt" translatable="false">Receipt</string>
+
+    <string name="button_checkout" translatable="false">Checkout</string>
+    <string name="description_product_image" translatable="false">Product Image</string>
+    <string name="format_paid_with_card" formatted="false" translatable="false">You have paid %s with card %s.</string>
+    <string name="format_price" formatted="false" translatable="false">THB %.2f</string>
+    <string name="authorize_payment" translatable="false">Authorize Payment</string>
+    <string name="do_you_want_to_redeem"><u>Do you want to redeem?</u></string>
+    <string name="have_promo_code"><u>Have promo code?</u></string>
+    <string name="back_txt"><u>Back</u></string>
+    <!--<string name="google_maps_key">AIzaSyDLZ5YQwFzCH6m0nP6_yayyiR8JqAEFvw8</string>-->
+    <string name="google_maps_key">AIzaSyB6ACp90IJp4SbAnOWYlXnM9qkVMH8ii1M</string>
+    <string name="after_purchase_your_recipient_can_get_email_notification_and_they_can_use_above_email_address_to_sign_up_vouchers_will_be_available_within_their_my_account">After purchase your recipient can get email notification and they can use above email address to sign up. Vouchers will be available within their my account</string>
+    <string name="gift_desc">In the event that your recipient is not a Sushi Tei App user, he/she will receive an  <b> e-mail </b> to sign up for an account and vouchers will appear in their <b>\'My Account\'</b> tab thereafter</string>
+    <string name="gift_myself_desc">Vouchers will appear under <b>\'Vouchers\'</b> tab after purchase</string>
+    <string name="generate_refferal_code">GENERATE REFFERAL CODE</string>
+    <string name="referral_code">Referral code : </string>
+    <string name="view_more"><u>View More</u></string>
+    <string name="top_up_my_wallet"><u>TOP UP MY WALLET</u></string>
+    <string name="i_m_just_browsing"><u>Im just browsing</u></string>
+    <string name="sign_up_benefits">Sign up for S$68 and receive ST $80 for immediate use</string>
+    <string name="member_benefit">MemberBenefit</string>
+    <string name="memner_reg">"Congratulations ! We have received your payment for Sushi Tei Membership.You will receive one email from us for the payment confirmation and one more for membership activation.Please keep a look out for these emails. Feel free to drop us an email if you have any furtherquestions at shop@sushitei.com."</string>
+
+</resources>

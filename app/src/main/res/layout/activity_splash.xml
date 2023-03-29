@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="fill_parent"
+    android:background="@drawable/splash1"
+    android:layout_height="fill_parent"
+    tools:context="com.app.sushi.tei.activity.SplashActivity">
+
+
+    <!--<com.jarvanmo.exoplayerview.ui.ExoVideoView
+        android:id="@+id/videoView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_350sdp"
+
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:background="@color/transparent_black"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_above="@id/lly_login"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_40sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/lly_login"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_8sdp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp" />
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:id="@+id/SliderDots"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lly_login"
+            android:layout_width="match_parent"
+            android:layout_above="@id/LoginLater"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_weight=".5"
+                android:background="@drawable/loginbg_new"
+                android:fontFamily="@font/gillsansmedium"
+                android:text="LOGIN"
+                android:textAllCaps="false"
+                android:textColor="@color/greenloginText"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_2sdp"                android:layout_weight=".5"
+                android:background="@drawable/login_register_bg_new"
+                android:fontFamily="@font/gillsansmedium"
+                android:text="REGISTER"
+                android:textAllCaps="false"
+                android:textColor="@color/greenloginText"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/LoginLater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:fontFamily="@font/gillsansmedium"
+            android:text="@string/i_m_just_browsing"
+            android:textAllCaps="true"
+
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_11ssp" />
+
+        <LinearLayout
+            android:id="@+id/lly_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/LoginView1"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight=".5"
+                android:background="@drawable/logindisablebg"
+                android:fontFamily="@font/gotham_medium"
+                android:text="LOGIN"
+                android:textAllCaps="false"
+                android:textColor="@color/registerborder"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/registrationView1"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight=".5"
+                android:background="@drawable/loginbg"
+                android:fontFamily="@font/gotham_medium"
+                android:text="REGISTER"
+                android:textAllCaps="false"
+                android:textColor="@color/loginborder"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/get_started_margin_bottom"
+        android:background="@drawable/checkout_paynow_background"
+        android:fontFamily="@font/baloo2_bold"
+        android:paddingLeft="@dimen/getstarted_padding_r_l"
+        android:paddingTop="@dimen/getstarted_padding_t_b"
+        android:paddingRight="@dimen/getstarted_padding_r_l"
+        android:paddingBottom="@dimen/getstarted_padding_t_b"
+        android:text="@string/splash_getstarted"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone" />
+
+</RelativeLayout>

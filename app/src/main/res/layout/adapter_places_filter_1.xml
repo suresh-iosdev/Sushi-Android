@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+
+            android:id="@+id/ridehistorylayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="@dimen/_15sdp"
+                        android:visibility="gone"
+                        android:src="@drawable/icon_location" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.8"
+                    android:padding="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:weightSum="1.4">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2">
+
+
+                            <TextView
+                                android:id="@+id/address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:fontFamily="@font/baloo2_bold"
+                                android:text="London"
+                                android:textColor="@color/text_color"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.4">
+
+                            <TextView
+                                android:id="@+id/subaddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/baloo2_bold"
+                                android:gravity="start"
+                                android:textSize="@dimen/_12ssp"
+                                android:text="98 East St, London Se17 2dq, Uk, England"
+                                android:textColor="@color/text_color" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+
+        android:background="@color/colorAsh"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="1dp"/>
+</LinearLayout>

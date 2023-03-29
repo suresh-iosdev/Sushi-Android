@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rly_voucherLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_155sdp"
+    android:layout_margin="@dimen/_10sdp"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_155sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/voucher_list_bg" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/img_availableVoucher"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:src="@drawable/voucher_badge_shape" />
+
+        <TextView
+            android:id="@+id/txt_avaCoupons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/img_availableVoucher"
+            android:layout_alignTop="@id/img_availableVoucher"
+            android:layout_alignEnd="@id/img_availableVoucher"
+            android:layout_alignBottom="@+id/img_availableVoucher"
+            android:fontFamily="@font/gillsansmedium"
+            android:gravity="center"
+            android:text="11"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_availableVoucher"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:fontFamily="@font/gillsansmedium"
+            android:gravity="center"
+            android:text="x \n Available"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/_155sdp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_drinksQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/gillsansmedium"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:text="Buy 10 Drinks"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gillsansmedium"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:text="Expiry "
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_expAva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_drinksQty"
+                android:fontFamily="@font/gillsansmedium"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_expAva"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:fontFamily="@font/gillsansmedium"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:text="item short description will be in this area"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_8ssp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/lly_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:fontFamily="@font/gillsansmedium"
+                android:text="$"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_voucherPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/gillsansmedium"
+                android:gravity="center_horizontal"
+                android:text="50.00"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/layoutView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/sasmple">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:gravity="center"
+                    android:text="View Now"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutRedeem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/checkout_paynow_background">
+
+                <TextView
+                    android:id="@+id/txt_redeem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/gillsansbold"
+                    android:gravity="center"
+                    android:text="Redeem"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10ssp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

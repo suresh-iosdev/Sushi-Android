@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_toLeftOf="@+id/layoutQuantityChild">
+
+        <TextView
+            android:fontFamily="@font/gillsansmedium"
+            android:id="@+id/txtModifierName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:paddingBottom="12dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="5dp"
+            android:paddingTop="12dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_11ssp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutQuantityChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imgDecreement"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/asset56" />
+
+        <RelativeLayout
+            android:id="@+id/layoutQuantity"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/imgDecreement"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:fontFamily="@font/baloo2_bold"
+                android:id="@+id/txtQuantity"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12ssp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgIncreement"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/layoutQuantity"
+            android:background="@drawable/asset55"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

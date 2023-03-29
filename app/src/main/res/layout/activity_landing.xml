@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar_new" />
+
+    <LinearLayout
+        android:id="@+id/llyViewMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolBar"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_delivery_disable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip  &amp; View Menu"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/baloo2_bold"
+            android:textColor="@color/greendark"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_below="@+id/toolBar"
+            android:visibility="visible"/>
+
+        <View
+            android:id="@+id/view_addMore"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/greendark"
+            android:visibility="visible"
+            android:layout_marginTop="-5dp"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llyViewMenu"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/rlyList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/img_orderNow"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+            <VideoView
+                android:id="@+id/vdo_orderNow"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/lly_OrderNow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/txt_OrderNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/checkout_paynow_background"
+                    android:fontFamily="@font/baloo2_bold"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="Read more"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llyAccPromo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lly_OrderNow"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/rlyAcc"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_240sdp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_myAcc"
+                        android:layout_height="@dimen/_240sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:visibility="gone"/>
+
+                    <VideoView
+                        android:id="@+id/vdo_myAcc"
+                        android:layout_height="@dimen/_240sdp"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_240sdp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txt_myAcc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@drawable/checkout_paynow_background"
+                            android:fontFamily="@font/baloo2_bold"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:text="Read more"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rly_promotions"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_240sdp"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/img_promotion"
+                        android:layout_height="@dimen/_240sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="gone"/>
+
+                    <VideoView
+                        android:id="@+id/vdo_promotion"
+                        android:layout_height="@dimen/_240sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_240sdp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txt_promotion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@drawable/checkout_paynow_background"
+                            android:fontFamily="@font/baloo2_bold"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:text="Read more"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_about"
+                android:layout_below="@+id/llyAccPromo"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+            <VideoView
+                android:id="@+id/vdo_about"
+                android:layout_below="@+id/llyAccPromo"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/lly_aboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_below="@+id/llyAccPromo"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/txt_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/checkout_paynow_background"
+                    android:fontFamily="@font/baloo2_bold"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="Read more"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
+
+
+    <!--  <?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <include
+      android:id="@+id/toolBar"
+      layout="@layout/toolbar_new" />
+
+  <LinearLayout
+      android:id="@+id/llyViewMenu"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_below="@+id/toolBar"
+      android:gravity="center"
+      android:layout_marginTop="@dimen/_10sdp">
+
+      <TextView
+          android:id="@+id/txt_delivery_disable"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Skip  &amp; View Menu"
+          android:textSize="@dimen/_12ssp"
+          android:fontFamily="@font/baloo2_bold"
+          android:textColor="@color/greendark"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:layout_below="@+id/toolBar"
+          android:visibility="visible"/>
+
+      <View
+          android:id="@+id/view_addMore"
+          android:layout_width="@dimen/_100sdp"
+          android:layout_height="@dimen/_1sdp"
+          android:background="@color/greendark"
+          android:visibility="visible"
+          android:layout_marginTop="-5dp"/>
+
+  </LinearLayout>
+
+
+  <android.support.v4.widget.NestedScrollView
+      android:id="@+id/nestedScrollView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/llyViewMenu"
+      android:layout_marginTop="@dimen/_10sdp"
+      android:fillViewport="true">
+
+      <LinearLayout
+          android:id="@+id/rlyList"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/_10sdp"
+          android:weightSum="3"
+          android:orientation="vertical">
+
+          <com.makeramen.roundedimageview.RoundedImageView
+              android:id="@+id/img_orderNow"
+              android:src="@drawable/order_now"
+              app:riv_corner_radius="10dip"
+              android:layout_height="0dp"
+              android:layout_width="match_parent"
+              android:scaleType="fitXY"
+              android:layout_centerHorizontal="true"
+              android:layout_weight=".8"/>
+
+          <LinearLayout
+              android:id="@+id/llyAccPromo"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:orientation="horizontal"
+              android:layout_below="@+id/img_orderNow"
+              android:layout_marginTop="8dp"
+              android:layout_marginBottom="8dp"
+              android:layout_weight="1.4"
+              android:weightSum="2">
+
+              <com.makeramen.roundedimageview.RoundedImageView
+                  android:id="@+id/img_myAcc"
+                  android:src="@drawable/account_home"
+                  app:riv_corner_radius="10dip"
+                  android:layout_height="match_parent"
+                  android:layout_width="0dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_weight="1"
+                  android:scaleType="fitXY"/>
+
+              <com.makeramen.roundedimageview.RoundedImageView
+                  android:id="@+id/img_promotion"
+                  android:src="@drawable/promotion_home"
+                  app:riv_corner_radius="10dip"
+                  android:layout_height="match_parent"
+                  android:layout_width="0dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_weight="1"
+                  android:scaleType="fitXY"/>
+          </LinearLayout>
+
+          <com.makeramen.roundedimageview.RoundedImageView
+              android:id="@+id/img_about"
+              android:layout_below="@+id/llyAccPromo"
+              android:src="@drawable/about_us"
+              app:riv_corner_radius="10dip"
+              android:layout_height="0dp"
+              android:layout_width="match_parent"
+              android:scaleType="fitXY"
+              android:layout_weight=".8"
+              android:layout_centerHorizontal="true"/>
+
+
+      </LinearLayout>
+
+
+  </android.support.v4.widget.NestedScrollView>
+
+  </RelativeLayout>-->

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".activity.ContactUsActivity">
+
+            <include
+                android:id="@+id/toolBar"
+                layout="@layout/toolbar_new" />
+
+            <TextView
+                android:id="@+id/txt_contactUsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Contact us"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:layout_below="@+id/toolBar"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/baloo2_bold"/>
+
+            <!--<TextView
+                android:id="@+id/chooseOutlet"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/add_product_background"
+                android:fontFamily="@font/baloo2_regular"
+                android:gravity="center"
+                android:hint="Choose outlet"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:paddingLeft="13dp"
+                android:textColor="@color/text_color"
+                android:textSize="14dp"/>-->
+
+            <LinearLayout
+                android:id="@+id/layout_contactusField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="@dimen/_10sdp"
+                android:layout_below="@+id/txt_contactUsLabel"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="Drop us an email and we will get back to you soon as we possibily can!"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/chooseOutlet"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/add_product_background"
+                    android:fontFamily="@font/baloo2_regular"
+                    android:gravity="center"
+                    android:text="Choose outlet"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:paddingLeft="13dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="14dp"/>
+
+
+                <EditText
+                    android:id="@+id/edtPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/add_product_background"
+                    android:fontFamily="@font/baloo2_regular"
+                    android:gravity="center"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:paddingLeft="13dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/add_product_background"
+                    android:hint="Your Name"
+                    android:paddingLeft="13dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/baloo2_regular"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/add_product_background"
+                    android:hint="Email Address"
+                    android:paddingLeft="13dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/baloo2_regular"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <EditText
+                    android:id="@+id/edtSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/add_product_background"
+                    android:hint="Subject"
+                    android:paddingLeft="13dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/baloo2_regular"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/edtMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/add_product_background"
+                    android:gravity="start"
+                    android:hint="Enter your message here..."
+                    android:inputType="text"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/baloo2_regular"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/checkout_paynow_background"
+                android:gravity="center"
+                android:text="Send"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:fontFamily="@font/baloo2_bold"
+                android:layout_below="@+id/layout_contactusField"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:id="@+id/navigationView"
+            android:layout_gravity="left"
+            android:visibility="visible"
+            android:background="@android:color/transparent">
+
+
+            <RelativeLayout
+                android:id="@+id/includeheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/mainMenuLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/incLayout"
+                        layout="@layout/drawer_menul_list_layout" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/subMenuLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/incLayout"
+                        layout="@layout/include_menu_about_sub_list" />
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_location"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/location"/>
+
+    <TextView
+        android:id="@+id/txt_addressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/gillsansbold"
+        app:layout_constraintLeft_toRightOf="@+id/img_location"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginLeft="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/txt_addressDetails"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/gillsansmedium"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_addressTitle"
+        app:layout_constraintLeft_toRightOf="@id/img_location"
+        android:layout_marginLeft="@dimen/_10sdp" />
+
+    <ImageView
+        android:id="@+id/img_selection"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:src="@drawable/asset54"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_addressTitle"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

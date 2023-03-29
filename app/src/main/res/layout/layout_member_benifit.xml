@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar_new2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/img_member_benefits"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center"
+                        android:text="Membership Benefits"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40ssp"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_below="@id/toolBar"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_welcome_icon" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center"
+                        android:text="Welcome to ST$"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/str_member_benefits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center"
+                        android:text="@string/sign_up_benefits"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40ssp"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_flexible_rebates" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center"
+                        android:text="Flexible Rebates"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/str_rebates"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/gillsans"
+                        android:gravity="center"
+                        android:text="Enjoy a 10% rebate on your next dine-in bill, no minimum spending required. Redeemable on your next visit."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40ssp"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_seamless_rewards" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Seamless Rewards"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/str_rewards"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center"
+                        android:text="Simply quote your contact number to earn rebates, no physical card needed."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40ssp"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_birthday" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Birthday Bonus"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/str_bonus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center"
+                        android:text="Enjoy 20% rebate and unlimited visits on your birthday month."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40ssp"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_privilege" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Exclusive Privileges"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center"
+                        android:text="Be the first to know of exclusive deals, and receive invites to special events."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40ssp"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_welcome_icon" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Exclusive Merchandise"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/gillsansmedium"
+                        android:gravity="center"
+                        android:text="Redeem exclusive merchandise with Sushi Tei Dollars (ST$)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:textSize="@dimen/_13sdp"
+        android:fontFamily="@font/baloo2_bold"
+        android:id="@+id/txtModifierHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="modifier selection"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAsh"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mdifierChildRecyclerview"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbarSize="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

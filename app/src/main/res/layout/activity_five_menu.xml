@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_five_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar_new" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpagerFiveMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@drawable/viewshadowdown"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayoutFiveMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/colorWhite"
+            app:tabBackground="@color/colorWhite"
+            app:tabIndicatorColor="@color/greendark"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="3dp"
+            app:tabGravity="center"
+            app:tabMode="fixed"
+            app:tabPadding="0dp"
+            app:tabIndicatorGravity="top">
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

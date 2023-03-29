@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/add_product_background">
+
+        <RelativeLayout
+            android:id="@+id/layoutClose"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/asset58" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutClose"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_delivery_warning"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="sorry"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color"
+                android:fontFamily="@font/baloo2_bold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:text="we cant deliver at the moment"
+                android:textAllCaps="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_color"
+                android:fontFamily="@font/baloo2_medium"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtComebackAgain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Please comback again"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color"
+                android:fontFamily="@font/baloo2_medium"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/txtChangeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/checkout_paynow_background"
+                android:gravity="center"
+                android:text="change address"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/baloo2_bold"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

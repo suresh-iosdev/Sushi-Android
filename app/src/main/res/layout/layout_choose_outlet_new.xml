@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar_new" />
+
+    <RelativeLayout
+        android:id="@+id/rl_overall_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lnrlayout_register_new"
+        android:layout_below="@id/toolBar">
+
+        <LinearLayout
+            android:id="@+id/layout_orderStatus"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_delivery_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txt_delivery"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/button_bg_green"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:text="DELIVERY"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/txt_takeaway_disable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/button_bg"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:text="TAKEAWAY"
+                    android:textColor="@color/greendark"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_takeaway_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txt_delivery_disable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:text="DELIVERY"
+                    android:textColor="@color/greendark"
+                    android:textSize="@dimen/_12ssp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_takeaway"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg_green"
+                    android:fontFamily="@font/gillsansmedium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:text="TAKEAWAY"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12ssp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_chooseOutletLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_orderStatus"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/gillsansmedium"
+            android:gravity="center"
+            android:text="Choose Your Outlet"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_chooseOutletLabel"
+            android:fontFamily="@font/gillsans"
+            android:gravity="center"
+            android:text="You can select the outlet based on distance"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10ssp" />
+
+        <com.app.sushi.tei.shadow.ShadowCenterLinearLayout
+            android:id="@+id/layout_outletLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_15sdp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/gillsansmedium"
+                android:text="Your current Location"
+                android:textSize="@dimen/_12ssp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--  <fragment
+                    android:id="@+id/autocomplete_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/text_color"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"/>-->
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_selectoutlet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/add_product_background"
+                    android:enabled="false"
+                    android:fontFamily="@font/gillsanslight"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12ssp" />
+
+                <ImageView
+                    android:id="@+id/img_editOutlet"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignTop="@+id/txt_selectoutlet"
+                    android:layout_alignRight="@+id/txt_selectoutlet"
+                    android:layout_alignBottom="@+id/txt_selectoutlet"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@drawable/picker"
+                    android:tint="@color/grayloginsub" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewAutoPlaces"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_below="@id/txt_selectoutlet"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+        </com.app.sushi.tei.shadow.ShadowCenterLinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_outletList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_outletLocation"
+            android:visibility="visible"
+            tools:listitem="@layout/adapter_outlet_list_new" />
+
+        <com.app.sushi.tei.shadow.ShadowCenterLinearLayout
+            android:id="@+id/layout_deliveryOutlet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edt_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_chooseOutletLabel"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/add_product_background"
+                android:fontFamily="@font/gillsansmedium"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="@dimen/_7sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:id="@+id/img_success"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/success"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_awesome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gillsansbold"
+                android:gravity="center"
+                android:text="Awesome"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_20ssp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_deliveryTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gillsans"
+                android:gravity="center"
+                android:text="we can Delivery from"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_deliveryAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/gillsansmedium"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/greendark"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="gone" />
+        </com.app.sushi.tei.shadow.ShadowCenterLinearLayout>
+
+        <TextView
+            android:id="@+id/continues"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/layout_deliveryOutlet"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/checkout_paynow_background"
+            android:fontFamily="@font/gillsansbold"
+            android:gravity="center"
+            android:text="Continue"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16ssp"
+            android:visibility="gone"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_deliveryOutletList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/continues"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_savedAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/continues"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/gillsansbold"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="Saved Address"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_15ssp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <com.app.sushi.tei.shadow.ShadowLinearLayout
+            android:id="@+id/shadow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_savedAddress"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:visibility="gone">
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorTransparent"
+                app:layout_constraintTop_toBottomOf="@id/cly_savedAddress" />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cly_savedAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/rectangle_white"
+                android:elevation="5dp"
+                app:layout_constraintTop_toBottomOf="@id/shadow_layout">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="@id/cly_savedAddress" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.app.sushi.tei.shadow.ShadowLinearLayout>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lnrlayout_register_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:visibility="visible">
+
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/login_register_bg_fill_new"
+            android:fontFamily="@font/gillsans"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="CONTINUE"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:ignore="HardcodedText" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
